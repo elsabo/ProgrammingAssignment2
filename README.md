@@ -103,3 +103,18 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
+
+### Usage
+Additional to the `makeCacheMatrix` and the `cacheSolve` functions you will find the `hilbert` function
+which it would generate a random matrix of size n by n
+ie. 
+>hilbert(6) 
+will create a 6 by 6 matrix Hilbert matrix that can be used by  `makeCacheMatrix` and `cacheSolve`
+
+Sample run
+
+    m = hilbert(6)
+    mcached = makeCacheMatrix(m)
+    cacheSolve(mcached)
+    
