@@ -1,16 +1,20 @@
-## Put comments here that give an overall description of what your
-## functions do
+#  Programming Assignment 2: Lexical Scoping
+#  Author: Jesus Chavez
+## elsabo@gmail.com
+## CourseraId: 6529762
 
-## hilbert function copied from ?solve
+
+## hilbert function 
+## copied from ?solve
 hilbert <- function(n) { 
   i <- 1:n
   1 / outer(i - 1, i, "+") 
 }
 
-## Write a short comment describing this function
-## Recieves x as matrix, it has to be inversable, no error handling added
+## Receives x as matrix, it has to be inversable, no error handling added
 ## inverse: returns the value of ix, defined to hold the inverse of the instatiated matrix
 ## invert: Will inverse matrix x and store it in ix
+## get|set to retrieve|assign the matrix after first instatiation
 makeCacheMatrix <- function(x = matrix()) {
   ix <- NULL
 
@@ -29,8 +33,6 @@ makeCacheMatrix <- function(x = matrix()) {
   list(get = get, set = set, inverse = inverse, invert = invert)
 }
 
-
-## Write a short comment describing this function
 ## Receives a special matrix created with makeCacheMatrix
 ## makeCacheMatrix holds an invertable matrix 
 ## It will always return the inverse of the matrix stored in the object makeCacheMatrix
